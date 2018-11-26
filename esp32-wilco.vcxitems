@@ -15,12 +15,12 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="$(MSBuildThisFileDirectory)library.properties" />
-    <Text Include="$(MSBuildThisFileDirectory)src\esp32_wilco.h" />
   </ItemGroup>
   <ItemGroup>
     <!-- <ClInclude Include="$(MSBuildThisFileDirectory)esp32_wilco.h" /> -->
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\WILCO.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="$(MSBuildThisFileDirectory)src\esp32_wilco.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)src\WILCO.cpp" />
   </ItemGroup>
 </Project>
