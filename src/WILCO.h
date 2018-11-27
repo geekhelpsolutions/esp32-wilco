@@ -4,9 +4,9 @@
 #define _WILCO_h
 
 #include "Arduino.h"
-#include "NVSNamespace.h"
-#include "NVSStringEntry.h"
-#include "NVSIntegerEntry.h"
+#include <NVSNamespace.h>
+#include <NVSStringEntry.h>
+#include <NVSIntegerEntry.h>
 
 
 #define NVS_NAMESPACE_NAME    "WILCO"
@@ -72,7 +72,6 @@ private:
 	String _generateFormField(NVSStringEntry *setting, bool isPassword = false);
 	String _generateFormField(NVSIntegerEntry *setting);
 
-	void _handleMQTTMessage(char * topic, byte * payload, unsigned int length);
 };
 
 #endif
